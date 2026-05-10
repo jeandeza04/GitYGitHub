@@ -28,13 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_venta = new System.Windows.Forms.Button();
+            this.btn_Almacen = new System.Windows.Forms.Button();
+            this.btn_Lista = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(94, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(615, 119);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Bienvenido";
+            // 
+            // btn_venta
+            // 
+            this.btn_venta.Location = new System.Drawing.Point(273, 159);
+            this.btn_venta.Name = "btn_venta";
+            this.btn_venta.Size = new System.Drawing.Size(246, 80);
+            this.btn_venta.TabIndex = 1;
+            this.btn_venta.Text = "Venta";
+            this.btn_venta.UseVisualStyleBackColor = true;
+            this.btn_venta.Click += new System.EventHandler(this.btn_venta_Click);
+            // 
+            // btn_Almacen
+            // 
+            this.btn_Almacen.Location = new System.Drawing.Point(273, 260);
+            this.btn_Almacen.Name = "btn_Almacen";
+            this.btn_Almacen.Size = new System.Drawing.Size(246, 80);
+            this.btn_Almacen.TabIndex = 2;
+            this.btn_Almacen.Text = "Almacen";
+            this.btn_Almacen.UseVisualStyleBackColor = true;
+            this.btn_Almacen.Click += new System.EventHandler(this.btn_Almacen_Click);
+            // 
+            // btn_Lista
+            // 
+            this.btn_Lista.Location = new System.Drawing.Point(273, 358);
+            this.btn_Lista.Name = "btn_Lista";
+            this.btn_Lista.Size = new System.Drawing.Size(246, 80);
+            this.btn_Lista.TabIndex = 3;
+            this.btn_Lista.Text = "Lista de Ventas";
+            this.btn_Lista.UseVisualStyleBackColor = true;
+            this.btn_Lista.Click += new System.EventHandler(this.btn_Lista_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Lista);
+            this.Controls.Add(this.btn_Almacen);
+            this.Controls.Add(this.btn_venta);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_venta;
+        private System.Windows.Forms.Button btn_Almacen;
+        private System.Windows.Forms.Button btn_Lista;
     }
 }
 

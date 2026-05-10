@@ -16,5 +16,20 @@ namespace GitYGitHub
         {
             InitializeComponent();
         }
+
+        private void btn_venta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Almacen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Lista_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
