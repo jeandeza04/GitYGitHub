@@ -16,5 +16,20 @@ namespace GitYGitHub
         {
             InitializeComponent();
         }
+
+        private void Inventario_Load(object sender, EventArgs e)
+        {
+            dgvInventario.Rows.Add("Tractor", 5, "S/. 25000");
+            dgvInventario.Rows.Add("Motobomba", 10, "S/. 1200");
+            dgvInventario.Rows.Add("Fumigadora", 15, "S/. 850");
+            dgvInventario.Rows.Add("Arado", 7, "S/. 3000");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 menu = new Form1();
+            menu.Show();
+            this.Close();
+        }
     }
 }

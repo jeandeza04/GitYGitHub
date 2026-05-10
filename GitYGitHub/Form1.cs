@@ -19,17 +19,23 @@ namespace GitYGitHub
 
         private void btn_venta_Click(object sender, EventArgs e)
         {
-
+            Ventas ventas = new Ventas();
+            ventas.Show();
+            this.Hide();
         }
 
         private void btn_Almacen_Click(object sender, EventArgs e)
         {
-
+            Inventario inventario = new Inventario();
+            inventario.Show();
+            this.Hide();
         }
 
         private void btn_Lista_Click(object sender, EventArgs e)
         {
-
+            ListaVentas lista = new ListaVentas();
+            lista.Show();
+            this.Hide();
         }
     }
 }
