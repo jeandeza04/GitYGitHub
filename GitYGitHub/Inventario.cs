@@ -27,7 +27,7 @@ namespace GitYGitHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 menu = new Form1();
+            Vendedor menu = new Vendedor();
             menu.Show();
             this.Close();
         }

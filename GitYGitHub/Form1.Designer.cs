@@ -29,62 +29,81 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_venta = new System.Windows.Forms.Button();
-            this.btn_Almacen = new System.Windows.Forms.Button();
             this.btn_Lista = new System.Windows.Forms.Button();
+            this.txt_User = new System.Windows.Forms.TextBox();
+            this.txt_Pass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 9);
+            this.label1.Location = new System.Drawing.Point(112, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(615, 119);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido";
             // 
-            // btn_venta
-            // 
-            this.btn_venta.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_venta.Location = new System.Drawing.Point(282, 142);
-            this.btn_venta.Name = "btn_venta";
-            this.btn_venta.Size = new System.Drawing.Size(246, 80);
-            this.btn_venta.TabIndex = 1;
-            this.btn_venta.Text = "Venta";
-            this.btn_venta.UseVisualStyleBackColor = true;
-            this.btn_venta.Click += new System.EventHandler(this.btn_venta_Click);
-            // 
-            // btn_Almacen
-            // 
-            this.btn_Almacen.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold);
-            this.btn_Almacen.Location = new System.Drawing.Point(282, 240);
-            this.btn_Almacen.Name = "btn_Almacen";
-            this.btn_Almacen.Size = new System.Drawing.Size(246, 80);
-            this.btn_Almacen.TabIndex = 2;
-            this.btn_Almacen.Text = "Almacen";
-            this.btn_Almacen.UseVisualStyleBackColor = true;
-            this.btn_Almacen.Click += new System.EventHandler(this.btn_Almacen_Click);
-            // 
             // btn_Lista
             // 
             this.btn_Lista.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold);
-            this.btn_Lista.Location = new System.Drawing.Point(282, 336);
+            this.btn_Lista.Location = new System.Drawing.Point(282, 364);
             this.btn_Lista.Name = "btn_Lista";
-            this.btn_Lista.Size = new System.Drawing.Size(246, 102);
+            this.btn_Lista.Size = new System.Drawing.Size(246, 74);
             this.btn_Lista.TabIndex = 3;
-            this.btn_Lista.Text = "Lista de Ventas";
+            this.btn_Lista.Text = "Ingresar";
             this.btn_Lista.UseVisualStyleBackColor = true;
             this.btn_Lista.Click += new System.EventHandler(this.btn_Lista_Click);
+            // 
+            // txt_User
+            // 
+            this.txt_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_User.Location = new System.Drawing.Point(311, 180);
+            this.txt_User.Name = "txt_User";
+            this.txt_User.Size = new System.Drawing.Size(200, 31);
+            this.txt_User.TabIndex = 4;
+            // 
+            // txt_Pass
+            // 
+            this.txt_Pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txt_Pass.Location = new System.Drawing.Point(311, 288);
+            this.txt_Pass.Name = "txt_Pass";
+            this.txt_Pass.Size = new System.Drawing.Size(200, 31);
+            this.txt_Pass.TabIndex = 5;
+            this.txt_Pass.UseSystemPasswordChar = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(306, 260);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Contraseña";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(306, 152);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Usuario";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_Pass);
+            this.Controls.Add(this.txt_User);
             this.Controls.Add(this.btn_Lista);
-            this.Controls.Add(this.btn_Almacen);
-            this.Controls.Add(this.btn_venta);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -96,9 +115,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_venta;
-        private System.Windows.Forms.Button btn_Almacen;
         private System.Windows.Forms.Button btn_Lista;
+        private System.Windows.Forms.TextBox txt_User;
+        private System.Windows.Forms.TextBox txt_Pass;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
