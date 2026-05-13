@@ -46,11 +46,11 @@
             // btn_Lista
             // 
             this.btn_Lista.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold);
-            this.btn_Lista.Location = new System.Drawing.Point(289, 307);
+            this.btn_Lista.Location = new System.Drawing.Point(281, 306);
             this.btn_Lista.Name = "btn_Lista";
-            this.btn_Lista.Size = new System.Drawing.Size(246, 102);
+            this.btn_Lista.Size = new System.Drawing.Size(262, 102);
             this.btn_Lista.TabIndex = 10;
-            this.btn_Lista.Text = "Lista de Ventas";
+            this.btn_Lista.Text = "Lista de Empleados";
             this.btn_Lista.UseVisualStyleBackColor = true;
             // 
             // btn_Almacen
