@@ -19,6 +19,7 @@ namespace GitYGitHub
 
         private void btn_Lista_Click(object sender, EventArgs e)
         {
+            String clave = (String)sender;
             string usuario = txt_User.Text;
             string contraseña = txt_Pass.Text;
 
