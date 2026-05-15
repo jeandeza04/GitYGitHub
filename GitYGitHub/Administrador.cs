@@ -15,6 +15,12 @@ namespace GitYGitHub
         public Administrador()
         {
             InitializeComponent();
+            this.FormClosed += Administrador_FormClosed;
+        }
+
+        private void Administrador_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
