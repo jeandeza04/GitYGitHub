@@ -22,29 +22,31 @@ namespace GitYGitHub
             string usuario = txt_User.Text;
             string contraseña = txt_Pass.Text;
 
-            // VENDEDOR
+            Form siguienteForm = null;
+
             if (usuario == "vendedor" && contraseña == "123")
-            {
-                Vendedor ven = new Vendedor();
-                ven.Show();
-                this.Hide();
-            }
-
-            // ADMINISTRADOR
+                siguienteForm = new Vendedor();
             else if (usuario == "admin" && contraseña == "123")
-            {
-                Administrador admin = new Administrador();
-                admin.Show();
-                this.Hide();
-            }
+                siguienteForm = new Administrador();
 
-            // ERROR
+            if (siguienteForm != null)
+            {
+                siguienteForm.Show();
+
+                // opcional: cerrar login completamente
+                this.Hide();
+
+                txt_User.Clear();
+                txt_Pass.Clear();
+            }
             else
             {
-                MessageBox.Show(
-                    "Usuario o contraseña incorrectos"
-                );
+                MessageBox.Show("Usuario o contraseña incorrectos");
+                txt_Pass.Clear();
+                txt_User.Focus();
             }
         }
+
+
     }
 }
